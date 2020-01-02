@@ -1,0 +1,12 @@
+html, body, #root {
+  background-color: #eee;
+}
+
+.main-wrapper {
+  min-height: 500px;
+  margin: 40px auto;
+}
+
+.header-wrapper {
+  background-color: #fff;
+}
