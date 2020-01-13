@@ -10,3 +10,162 @@ html, body, #root {
 .header-wrapper {
   background-color: #fff;
 }
+
+.container-header {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 30px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-img {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 0;
+}
+
+.header-auth {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.header-item {
+  margin: 0 10px;
+}
+
+
+/* --------------------------  CONTAINERS  ------------------------- */
+
+.wrapper-content {
+  padding: 15px 10px;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 300px;
+}
+
+
+/* --------------------------  HOME  ------------------------- */
+
+.left-section-home {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.right-section-home {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.post-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 17px;
+  background-color: rgba(159, 255, 164, 0.486);
+  color: black;
+  height: 150px;
+  box-shadow: 5px 5px 10px dimgray;
+  text-decoration: none;
+}
+
+/* --------------------------  POST  ------------------------- */
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post {
+  margin: 14px;
+  padding: 14px;
+  border: 5px solid #fff;
+  box-shadow: 5px 5px 10px dimgray;
+  background-color: #fff0cd;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+
+.form-title {
+  margin: 20px;
+}
+
+.form-body {
+  margin-bottom: 20px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-add {
+  margin: 10px;
+}
+
+.auth-errors {
+  color: red;
+}
+
+.button {
+  margin: 10px;
+  box-shadow: 5px 5px 10px dimgray;
+}

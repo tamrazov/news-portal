@@ -1,32 +1,27 @@
 import React from 'react';
-import model from './../store'
 import { observer } from 'mobx-react';
+import { Link } from 'react-router-dom'
+import ItemHeader from './ItemHeader';
+import logo from './../img/logo.png'
 
-export default observer(function() {
-  
-
-  let posts = model.posts.map( (post) => {
-      return (
-        <li key={post.id}
-        >
-          { post.body }
-        </li>
-      )
+@observer
+class Header extends React.Component {
+  render() {
+    const items = {
+      list: ['Home','About','Category','AddPost']
     }
-  )
+    return(
+      <div className="container-header">
+          <div className="header-logo">
+            <Link to="/Home"> <img className="header-logo-img" src={ logo } alt="Logo"/> </Link>  
+          </div>
+          <ItemHeader items={items.list} className=""/>
+          <div className='header-auth'>
+            <Link to="/Auth" > LOG IN </Link>
+          </div>
+        </div>
+    )
+  }
+}
 
-
-
-  return(
-    <div>
-      { model.Lenght }
-      <button onClick={ model.addPosts } >
-        add
-      </button>
-      <br/>
-      <div>
-        { posts }
-      </div>
-    </div>
-  );
-});
+export default Header;
