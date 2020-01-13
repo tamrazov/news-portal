@@ -1,7 +1,7 @@
 # React spa application
 > Hello everybody. My name is Aleksandr and I`m from Russia, Rostov-on-Don.  
 > Im junior ~~frontend developer~~!  
-> This is my pet project (news portal) on reactjs 
+> This is my pet project (news portal) on reactjs   
 > My email: box-570@yandex.ru  
 > My telegram: @Papi180  
 > My [VK]  
